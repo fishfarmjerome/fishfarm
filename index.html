@@ -48,6 +48,10 @@
             border-radius: 0px;
             margin-top: 15px;
             white-space: nowrap;
+    width: 90%;       /* On small screens, take up 90% of the screen width */
+    max-width: 400px; /* On large screens, stop growing once it hits 400px */
+    box-sizing: border-box; /* Ensures padding doesn't accidentally push the box wider than the screen */
+
         }
         .btn:hover {
             background: #5cffb6;
