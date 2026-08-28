@@ -19,15 +19,31 @@
             display: flex;
             justify-content: center;
         }
+        h1 {
+            position: relative;
+}
+
+        h1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("noise.png");
+    opacity: 0.3;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
     </style>
+
 </head>
 <body>
-
+    
     <h1>contact me</h1>
     <p>my email is fishfarmjerome@gmail.com</p>
     
     <!-- This link will take them back to your main profile page -->
-    <a href="index.html" class="back-link">← Go Back Home</a>
+    <a href="index.html" class="back-link">← home</a>
+
 
 </body>
+
 </html>
